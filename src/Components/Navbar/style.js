@@ -30,7 +30,6 @@ export const UlList = Styled.ul`
         width: 100%;
         float:  none;
         margin-top: 20px;
-        display: none;
     }
 `
 
