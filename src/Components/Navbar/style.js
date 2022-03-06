@@ -14,6 +14,7 @@ export const Logo = Styled.div`
     @media (max-width : 991px) {
         width: 100%;
         float: none;
+        text-align:center;
     }
 `
 
