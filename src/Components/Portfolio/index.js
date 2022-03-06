@@ -1,15 +1,16 @@
 import axios from 'axios';
 import React, {useState, useEffect} from 'react'
+import data from './../../../src/data.json';
 import {PortfolioSection, PortfolioTitle, PortfolioList, PortfolioItem, Span, Overlay, OverlaySpan, Image, ImageWrapper} from './style.js';
 
 const Portfolio = () => {
-    const [images, setImages] = useState([])
+    // const [images, setImages] = useState([])
 
-    useEffect( () => {
-      axios.get('js/data.json').then(res => {setImages(res.data.portfolio)})
-    }, [])
+    // useEffect( () => {
+    //   axios.get('js/data.json').then(res => {setImages(res.data.portfolio)})
+    // }, [])
 
-    const PortfolioImages = images.map(imageItem => {
+    const PortfolioImages = data.portfolio.map(imageItem => {
       return(
         <ImageWrapper key={imageItem.id}>
           <Image src={imageItem.image} alt=""/>
