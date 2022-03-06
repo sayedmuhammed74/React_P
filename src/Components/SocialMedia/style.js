@@ -28,6 +28,9 @@ export const Icon = styled.i`
     color: #888;
     float: left;
     margin-right: 10px;
+    @media (max-width:991px){
+        float:none;
+    }
 `
 
 export const SocialDesc = styled.p`
@@ -36,6 +39,9 @@ export const SocialDesc = styled.p`
     font-size: 20px;
     color: #fff;
     float: left;
+    @media (max-width:991px){
+        float:none;
+    }
 `
 
 export const Span = styled.span`
